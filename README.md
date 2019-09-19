@@ -78,6 +78,9 @@ one business day** to complete. I.e. if you request it on Friday, you may only g
 access to your account on Monday. Once you get your email granting your access 
 to your WSCI trial, we are ready to get started! 
 
+
+
+
 <!-- ## Extending the code pattern
 This application can be expanded in a couple of ways:
 * Create a wallet for every member and use the member's wallet to interact with the application.
