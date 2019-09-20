@@ -6,7 +6,7 @@ ultimately optimize supply chain performance
 Audience level : Intermediate Developers
 
 🚨
-*Note: Watson Supply Chain Insights will be abbreviated to WSCI for short.*
+**Note: Watson Supply Chain Insights will be abbreviated to WSCI for short.**
 🚨
 
 When you have completed this code pattern, you will understand how to:
@@ -152,6 +152,29 @@ key icon you can see it says **X-IBM-Client-Secret** - then click
 **SHOW** and save your **X-IBM-Client-Secret**.
 
 # 5. Use APIs to automate uploading of data to Watson Supply Chain Insights
+Let's first go to the WSCI [API documentation page](https://developer.ibm.com/api/view/scinsights-prod:supply-chain-insights:title-Supply_Chain_Insights#doc). From there, let's try out first API request to find customers. 
+In your cloned repo, you should see a script that is called
+`getCustomers.js`. This script, along with a lot of the other scripts
+we will run, use the base api 
+`https://api.ibm.com/scinsights/run/api/`, but this one in specific 
+looks to get all of the customers we have stored in WSCI. This is 
+why the URL we will make a API request to is the following:
+
+`url: 'https://api.ibm.com/scinsights/run/api/customers'`
+
+Our script uses the [HTTP request client](https://github.com/request/request) package to make API calls. It also uses the [fs](https://github.com/nodejs/node/blob/master/doc/api/fs.md#fswritefilefile-data-options-callback)
+module to write the output from the API request to a file. 
+
+Note that all of the output files will be created in the `output` 
+directory, which at first, is empty.
+
+
+
+```javascript
+watson-supply-chain-insights$ node getCustomer.js
+The file was saved!
+```
+
 
 
 
