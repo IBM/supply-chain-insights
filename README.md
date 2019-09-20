@@ -5,7 +5,7 @@ ultimately optimize supply chain performance
 
 Audience level : Intermediate Developers
 
-🚨**Note: Watson Supply Chain Insights will be abbreviated to WSCI for short.**🚨
+🚨*Note: Watson Supply Chain Insights will be abbreviated to WSCI for short.*🚨
 
 When you have completed this code pattern, you will understand how to:
 
@@ -51,7 +51,7 @@ in real-time.
 
 1. [Get an IBM ID](#1-Get-an-IBM-ID)
 2. [Get a Watson Supply Chain Insights trial account](#2-Get-a-Watson-Supply-Chain-Insights-trial-account)
-3. [Create IBM Cloud services](#3-create-ibm-cloud-services)
+3. [Upload existing orders and shipments from spreadsheet](#3-Upload-existing-orders-and-shipments-from-spreadsheet)
 
 
 
@@ -77,6 +77,46 @@ From there, fill in the form with your IBM ID email, and then click on
 one business day** to complete. I.e. if you request it on Friday, you may only get 
 access to your account on Monday. Once you get your email granting your access 
 to your WSCI trial, we are ready to get started! 
+
+# 3. Upload existing orders and shipments from spreadsheet
+Our first exercise upon getting our WSCI account is uploading data from a 
+spreadsheet. Go ahead do a git clone to download all of the files from 
+the repo, which includes the Excel spreadsheets.
+
+```
+testDir$ git clone https://github.com/horeaporutiu/watson-supply-chain-insights
+
+testDir$ cd watson-supply-chain-insights/ 
+```
+
+You'll see in this repo, that we have the *product-spreadsheet.xlsx* 
+and *product-inventory.xlsx* files. First, let's update the spreadsheets
+to use our own initials instead of *RTA*. Update the files, and save 
+them. Since my initials are HP, my spreadsheet will show 
+*HP-SA-2019-V1*.
+
+Now, log into [IBM Supply Chain Insights](https://www.ibm.com/customer-engagement/supply-chain/launch/) with your IBM ID and 
+password you created in step 1.
+
+From the left-hand panel of the WSCI dashboard, click on *Data*, which
+is right above the *Settings*. From there, click on *Upload*. From 
+there, navigate to *product-inventory.xlsx* from within your cloned
+repo. You should see something like `This upload is similar to files that were previously uploaded. Select one of these mappings?
+You can edit the mapping or make a copy if necessary.` Go ahead 
+and click on *Select a type* under the main panel which shows 
+11/12 fields matched. Then select *Product Inventory*. You should 
+see a pop-up which says *Time to map your upload!* Click on `Continue`.
+
+Then, under *Your data fields* click on *Select an option* and click 
+on *Inventory Location*. On the bottom, you should see *11/12 mapped*.
+Click on *Next*.
+
+The next page will say *Your data is uploading*. Click on *View History*.
+
+There, at the top of the page you should see *product-inventory*. If you
+click on the right-arrow, you should see *8 records processed*. Nice job!
+
+You now know how to upload data through Excel spreadsheets! 
 
 
 
