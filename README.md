@@ -89,32 +89,32 @@ testDir$ git clone https://github.com/horeaporutiu/watson-supply-chain-insights
 testDir$ cd watson-supply-chain-insights/ 
 ```
 
-You'll see in this repo, that we have the *product-spreadsheet.xlsx* 
-and *product-inventory.xlsx* files. First, let's update the spreadsheets
-to use our own initials instead of *RTA*. Update the files, and save 
+You'll see in this repo, that we have the **product-spreadsheet.xlsx** 
+and **product-inventory.xlsx** files. First, let's update the spreadsheets
+to use our own initials instead of **RTA**. Update the files, and save 
 them. Since my initials are HP, my spreadsheet will show 
-*HP-SA-2019-V1*.
+**HP-SA-2019-V1**.
 
 Now, log into [IBM Supply Chain Insights](https://www.ibm.com/customer-engagement/supply-chain/launch/) with your IBM ID and 
 password you created in step 1.
 
-From the left-hand panel of the WSCI dashboard, click on *Data*, which
-is right above the *Settings*. From there, click on *Upload*. From 
-there, navigate to *product-inventory.xlsx* from within your cloned
+From the left-hand panel of the WSCI dashboard, click on **Data**, which
+is right above the **Settings**. From there, click on **Upload**. From 
+there, navigate to **product-inventory.xlsx** from within your cloned
 repo. You should see something like `This upload is similar to files that were previously uploaded. Select one of these mappings?
 You can edit the mapping or make a copy if necessary.` Go ahead 
-and click on *Select a type* under the main panel which shows 
-11/12 fields matched. Then select *Product Inventory*. You should 
-see a pop-up which says *Time to map your upload!* Click on `Continue`.
+and click on **Select a type** under the main panel which shows 
+11/12 fields matched. Then select **Product Inventory**. You should 
+see a pop-up which says **Time to map your upload!** Click on `Continue`.
 
-Then, under *Your data fields* click on *Select an option* and click 
-on *Inventory Location*. On the bottom, you should see *11/12 mapped*.
-Click on *Next*.
+Then, under **Your data fields** click on **Select an option** and click 
+on **Inventory Location**. On the bottom, you should see **11/12 mapped**.
+Click on **Next**.
 
-The next page will say *Your data is uploading*. Click on *View History*.
+The next page will say **Your data is uploading**. Click on **View History**.
 
-There, at the top of the page you should see *product-inventory*. If you
-click on the right-arrow, you should see *8 records processed*. Nice job!
+There, at the top of the page you should see **product-inventory**. If you
+click on the right-arrow, you should see **8 records processed**. Nice job!
 
 You now know how to upload data through Excel spreadsheets! 
 
