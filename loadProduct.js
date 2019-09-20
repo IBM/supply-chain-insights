@@ -1,5 +1,6 @@
 var request = require("request");
 let productInfo = require("./productInfo");
+const config = require('./config.js');
 
 var options = {
   method: 'POST',
