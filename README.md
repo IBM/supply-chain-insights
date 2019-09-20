@@ -228,7 +228,7 @@ to the `output/getAllCustomer.json` file:
 ```
 
 Now that we understand how we are making the request, let's 
-go ahead and run the script:
+go ahead and run the script [getCustomer.js](https://github.ibm.com/ibm-developer-emerging-tech/watson-supply-chain-insights/blob/master/getCustomers.js)
 
 ```javascript
 watson-supply-chain-insights$ node getCustomers.js
