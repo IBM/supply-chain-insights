@@ -3,7 +3,7 @@ const fs = require('fs');
 
 //url is what we are making the request to
 // headers tell the request that we will receive JSON back
-//credentials authenticate and prove our
+//credentials authenticate and prove that we are allowed to use WSCI
 var options = { method: 'GET',
   url: 'https://api.ibm.com/scinsights/run/api/customers',
   headers: 
