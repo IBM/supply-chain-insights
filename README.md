@@ -5,7 +5,9 @@ ultimately optimize supply chain performance
 
 Audience level : Intermediate Developers
 
-🚨*Note: Watson Supply Chain Insights will be abbreviated to WSCI for short.*🚨
+🚨
+*Note: Watson Supply Chain Insights will be abbreviated to WSCI for short.*
+🚨
 
 When you have completed this code pattern, you will understand how to:
 
@@ -45,14 +47,21 @@ in real-time.
 
 ### Prerequisites
 - [IBM ID](https://www.ibm.com) 
-- [Watson Supply Chain Insights account](https://www.onlinedigitallearning.com/mod/page/view.php?id=59722&forceview=1) 
+- [Watson Supply Chain Insights account](https://www.onlinedigitallearning.com/mod/page/view.php?id=59722&forceview=1)
+- [Node.js - v8.9.0](https://nodejs.org/en/) 
+
 
 ### Steps
 
 1. [Get an IBM ID](#1-Get-an-IBM-ID)
+
 2. [Get a Watson Supply Chain Insights trial account](#2-Get-a-Watson-Supply-Chain-Insights-trial-account)
+
 3. [Upload existing orders and shipments from spreadsheet](#3-Upload-existing-orders-and-shipments-from-spreadsheet)
 
+4. [Get API Credentials](#4-Get-API-credentials)
+
+5. [Use APIs to automate uploading of data to Watson Supply Chain Insights](#4-Use-APIs-to-automate-uploading-of-data-to-Watson-Supply-Chain-Insights)
 
 
 ## 1. Get an IBM ID
@@ -117,6 +126,32 @@ There, at the top of the page you should see **product-inventory**. If you
 click on the right-arrow, you should see **8 records processed**. Nice job!
 
 You now know how to upload data through Excel spreadsheets! 
+
+# 4. Get API Credentials
+
+APIs for WSCI enable you to load, update, and delete data. The first 
+thing we need to do before we can use the API is to get our credentials.
+
+We need three credentials:
+
+1. X-IBM-User-Secret
+2. X-IBM-Client-Id
+3. X-IBM-Client-Secret
+
+To retrieve the first two, from the WSCI home dashboard, click on
+**Settings -> Build info**. From there you should see 
+your **X-IBM-User-Secret** and **X-IBM-Client-Id**
+
+To retrieve the **X-IBM-Client-Secret**, click on **RESTful APIs**
+under API access. This will take you to the WSCI API explorer page.
+Click on **My APIs** in the top-right corner. To the right of 
+**Supply Chain Insights** you'll see a key icon, go ahead and click
+on that. Once you click the icon, you'll see two sets of credentials
+one with a lock icon, and one with a key icon. If you hover over the 
+key icon you can see it says **X-IBM-Client-Secret** - then click 
+**SHOW** and save your **X-IBM-Client-Secret**.
+
+# 5. Use APIs to automate uploading of data to Watson Supply Chain Insights
 
 
 
