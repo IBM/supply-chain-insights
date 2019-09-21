@@ -147,6 +147,35 @@ one with a lock icon, and one with a key icon. If you hover over the
 key icon you can see it says **X-IBM-Client-Secret** - then click 
 **SHOW** and save your **X-IBM-Client-Secret**.
 
+🚨
+**Note: You will have to update your [config.js](https://github.com/horeaporutiu/watson-supply-chain-insights/blob/master/config.js) file client secret, user secret, and user id fields with the credentials you just got above.**
+🚨
+
+At first the [config.js](https://github.com/horeaporutiu/watson-supply-chain-insights/blob/master/config.js)
+file will look something like this:
+
+```javascript
+module.exports = {
+  "x-ibm-client-secret": 'your-client-secret-goes-here',
+  "x-ibm-user-secret": 'your-user-secret-goes-here',
+  "x-ibm-client-id": 'your-client-id-goes-here'
+}
+```
+
+Once you update and save the file, it should look something like this:
+
+```javascript
+module.exports = {
+  "x-ibm-client-secret": 'yD4cI3jO8tE3wN7hO123fsdfacQ4wM6lQ6oX8pN1bA8iF',
+  "x-ibm-user-secret": 'a6f24a5dafsdfsdfb3e6-952c909cec34',
+  "x-ibm-client-id": '9e1fafafb14b-4211-a540-2627bc0321b4'
+}
+```
+
+Note these are fake credentials ^^.
+
+Nice, you are now ready to use the WSCI APIs!
+
 # 5. Use APIs to automate uploading of data to Watson Supply Chain Insights
 Let's first go to the WSCI [API documentation page](https://developer.ibm.com/api/view/scinsights-prod:supply-chain-insights:title-Supply_Chain_Insights#doc). From there, let's try out first API request to find customers. 
 In your cloned repo, you should see a script that is called
@@ -172,37 +201,17 @@ const request = require("request");
 const fs = require('fs');
 ```
 
-Next, we create an object which holds the options to our API request:
-
-🚨
-**Note: You will have to update the client secret, user secret, and user id fields with the credentials you got from [step 4](#4-Get-API-credentials).**
-🚨
-
+Next, we create an object which holds the options to our API request - note that 
+we are using the API keys from our `config.js` file:
 ```javascript
 var options = { method: 'GET',
   url: 'https://api.ibm.com/scinsights/run/api/customers',
   headers: 
    {
      'content-type': 'application/json',
-     'x-ibm-client-secret': 'your-client-secret-goes-here',
-     'x-ibm-user-secret': 'your-user-secret-goes-here',
-     'x-ibm-client-id': 'your-client-id-goes-here' 
-    } 
-  };
-```
-
-Once you've updated your credentials, the object should look 
-something like this (P.S. the credentials below are fake):
-
-```javascript
-var options = { method: 'GET',
-  url: 'https://api.ibm.com/scinsights/run/api/customers',
-  headers: 
-   {
-     'content-type': 'application/json',
-     'x-ibm-client-secret': 'yD4cI3jO8tE3wN7hO2fG0wBashdjkfF5uY7cQ4wM6lQ6oX8pN1bA8iF',
-     'x-ibm-user-secret': 'a6f24afafaf52c909cec34',
-     'x-ibm-client-id': '9e12d666-b1fsfa4b-4211-21b4asdf' 
+     'x-ibm-client-secret': config.x-ibm-client-secret,
+     'x-ibm-user-secret': config.x-ibm-user-secret,
+     'x-ibm-client-id': config.x-ibm-client-id 
     } 
   };
 ```
@@ -235,7 +244,7 @@ watson-supply-chain-insights$ node getCustomers.js
 The file was saved!
 ```
 
-If we go to the file, we will see it's all on one line. Let's
+If we go to the [output/getAllCustomer.json file](https://github.ibm.com/ibm-developer-emerging-tech/watson-supply-chain-insights/blob/master/output/getAllCustomers.json), we will see it's all on one line. Let's
 format it by selecting the line, right-clicking and selecting 
 **format document**. If all went well, you should see a document
 with over 300 lines, something that looks a bit like the following:
@@ -322,6 +331,97 @@ Note that this is all dummy data, but WSCI comes with some dummy
 data out of the box to show you what it can do. Let's now 
 go ahead and put some of our own data into WSCI.
 
+Go ahead and check out the [sampleProduct.json file](https://github.ibm.com/ibm-developer-emerging-tech/watson-supply-chain-insights/blob/master/sampleProduct.json)
+
+It should look something like this: 
+
+```json
+{
+  "_flagOperationalPerformance": 1,
+  "_id": "Enter your own product name",
+  "_numDefectedProducts": 1,
+  "_productAgingThreshold": 2160,
+  "_productBrand": "Zilla Bar",
+  "_productCategory": "Food",
+  "_productDescription": "Zilla Energy Bar 2oz. Special Edition",
+  "_productExpectedLeadTime": 840,
+  "_productFamily": "Health Food",
+  "_productID": "Enter your own product name",
+  "_productLine": "Energy Bars",
+  "_productMargin": 40,
+  "_productNumber": "Enter your own product name",
+  "_productReorderLevel": 36729000,
+  "_productSafetyStockLevel": 33390000,
+  "_productShelfLife": 1800,
+  "_productValue": 6,
+  "_productValueCurrency": "US$",
+  "_sourceLink": null,
+  "_totalDefectedProducts": 0,
+  "_totalProduction": 100000,
+  "agingThreshold": 2160,
+  "brand": "Zilla Bar",
+  "category": "Food",
+  "description": "Zilla Energy Bar 2oz. Special Edition",
+  "expectedLeadTime": 840,
+  "family": "Health Food",
+  "line": "Energy Bars",
+  "number": "Enter your own product name",
+  "reOrderLevel": 36729000,
+  "safetyStockLevel": 33390000,
+  "shelfLife": 1800,
+  "sourceLink": null,
+  "value": 6,
+  "valueCurrency": "US$"
+}
+```
+
+Go ahead and change the `_id` and `_productID` values to whatever you wish. I will
+change them to something with my name. 
+
+Once you modify and save the file, it should look something like this:
+
+```json
+{
+  "_flagOperationalPerformance": 1,
+  "_id": "Horea-GOAT",
+  "_numDefectedProducts": 1,
+  "_productAgingThreshold": 2160,
+  "_productBrand": "Zilla Bar",
+  "_productCategory": "Food",
+  "_productDescription": "Zilla Energy Bar 2oz. Special Edition",
+  "_productExpectedLeadTime": 840,
+  "_productFamily": "Health Food",
+  "_productID": "Horea-is-GOAT",
+  "_productLine": "Energy Bars",
+  "_productMargin": 40,
+  "_productNumber": "Enter your own product name",
+  "_productReorderLevel": 36729000,
+  "_productSafetyStockLevel": 33390000,
+  "_productShelfLife": 1800,
+  "_productValue": 6,
+  "_productValueCurrency": "US$",
+  "_sourceLink": null,
+  "_totalDefectedProducts": 0,
+  "_totalProduction": 100000,
+  "agingThreshold": 2160,
+  "brand": "Zilla Bar",
+  "category": "Food",
+  "description": "Zilla Energy Bar 2oz. Special Edition",
+  "expectedLeadTime": 840,
+  "family": "Health Food",
+  "line": "Energy Bars",
+  "number": "Enter your own product name",
+  "reOrderLevel": 36729000,
+  "safetyStockLevel": 33390000,
+  "shelfLife": 1800,
+  "sourceLink": null,
+  "value": 6,
+  "valueCurrency": "US$"
+}
+```
+
+Excuse the GOAT reference, but hopefully I will be GOAT at some point :) 😂
+Anyways, save the file, and then run the script [loadProduct.js](https://github.com/horeaporutiu/watson-supply-chain-insights/blob/master/loadProduct.js).
 
 
 
