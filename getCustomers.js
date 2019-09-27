@@ -1,5 +1,10 @@
 const request = require("request");
 const fs = require('fs');
+const path = require('path');
+
+const configPath = path.join(process.cwd(), './config.json');
+const configJSON = fs.readFileSync(configPath, 'utf8');
+const config = JSON.parse(configJSON);
 
 //url is what we are making the request to
 // headers tell the request that we will receive JSON back
@@ -9,9 +14,9 @@ var options = { method: 'GET',
   headers: 
    {
      'content-type': 'application/json',
-     'x-ibm-client-secret': 'your-client-secret-goes-here',
-     'x-ibm-user-secret': 'your-user-secret-goes-here',
-     'x-ibm-client-id': 'your-client-id-goes-here' 
+     'x-ibm-client-secret': config.clientSecret,
+     'x-ibm-user-secret': config.userSecret,
+     'x-ibm-client-id': config.clientId 
     } 
   };
 

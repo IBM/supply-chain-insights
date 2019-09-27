@@ -1,0 +1,5 @@
+{
+  "clientSecret": 'your-client-secret-goes-here',
+  "userSecret": 'your-user-secret-goes-here',
+  "clientId": 'your-client-id-goes-here'
+}
