@@ -1,12 +1,12 @@
-# Watson Supply Chain Insights
+# Supply Chain Insights
 
->Use Watson Supply Chain Insights to predict, assess, and mitigate disruptions and 
+>Use Supply Chain Insights to predict, assess, and mitigate disruptions and 
 ultimately optimize supply chain performance
 
 Audience level : Intermediate Developers
 
 🚨
-**Note: Watson Supply Chain Insights will be abbreviated to WSCI for short.**
+**Note: Supply Chain Insights will be abbreviated to SCI for short.**
 🚨
 
 When you have completed this code pattern, you will understand how to:
@@ -15,27 +15,28 @@ When you have completed this code pattern, you will understand how to:
 * Use APIs to automate and upload large batches of orders and shipments
 * Automate updating external shipment data (from UPS or Fedex) to increase response
 time of supply chain events.
-* Use external news sources (weather data, port closures) to provide advisories 
-in real-time. 
 
-<!-- # Architecture flow
-***UPDATE***
+# Architecture flow
+<!-- ***UPDATE***
 
 <p align="center">
   <img src="docs/doc-images/archdiagram.png">
-</p>
+</p> -->
 
-1. The developer develops a smart contract using Node.js
-2. Use the IBM Blockchain Platform Extension for VS Code to package the Decentralized Energy smart contract.
-3. Setup and launch the IBM Blockchain Platform 2.0 service
-4. The IBM Blockchain Platform 2.0 enables the creation of a network onto a IBM Kubernetes Service, enabling installation and instantiation of the Auction smart contract on the network
-5.  The Node.js application uses the Fabric SDK to add a listener to specific transactions and subsequently interact with the deployed network on IBM Blockchain Platform 2.0 and issues transactions.
-6.  Events are emitted as transactions are triggered and blocks are committed to the ledger. The events are sent back to the Node.js application.
- -->
+1. The developer uploads existing shipment information using Excel.
+2. The developer uses APIs to automate uploading of large batches of 
+orders and shipments.
+3. The developer uses UPS API's to gain real-time information about the 
+current location and estimated time of delivery for shipments. 
+4. Supply Chain Insights offers valuable advisories depending on the UPS 
+information about the current location and estimated delivery. 
+5. The supply chain team goes into resolution rooms to react to 
+unforseen events emitted by Supply Chain Insights.
+
 
 
 # Included components
-* [Watson Supply Chain Insights](https://www.ibm.com/us-en/marketplace/supply-chain-insights) Capitalize on AI to break free from supply chain visibility challenges and act with confidence.
+* [Supply Chain Insights](https://www.ibm.com/us-en/marketplace/supply-chain-insights) Capitalize on AI to break free from supply chain visibility challenges and act with confidence.
 
 ## Featured technologies
 <!-- + [Hyperledger Fabric v1.4](https://hyperledger-fabric.readthedocs.io) is a platform for distributed ledger solutions, underpinned by a modular architecture that delivers high degrees of confidentiality, resiliency, flexibility, and scalability. -->
@@ -47,31 +48,31 @@ in real-time.
 
 ### Prerequisites
 - [IBM ID](https://www.ibm.com) 
-- [Watson Supply Chain Insights account](https://www.onlinedigitallearning.com/mod/page/view.php?id=59722&forceview=1)
+- [Supply Chain Insights account](https://www.onlinedigitallearning.com/mod/page/view.php?id=59722&forceview=1)
 - [Node.js - v8.9.0](https://nodejs.org/en/) 
 
 
 # Steps
 
 1. [Get an IBM ID](#1-Get-an-IBM-ID)
-2. [Get a Watson Supply Chain Insights trial account](#2-Get-a-Watson-Supply-Chain-Insights-trial-account)
+2. [Get a Supply Chain Insights trial account](#2-Get-a-Supply-Chain-Insights-trial-account)
 3. [Upload existing orders and shipments from spreadsheet](#3-Upload-existing-orders-and-shipments-from-spreadsheet)
 4. [Get API Credentials](#4-Get-API-credentials)
-5. [Use APIs to automate uploading of data to Watson Supply Chain Insights](#5-Use-APIs-to-automate-uploading-of-data-to-Watson-Supply-Chain-Insights)
+5. [Use APIs to automate uploading of data to Supply Chain Insights](#5-Use-APIs-to-automate-uploading-of-data-to-Supply-Chain-Insights)
 
 
 ## 1. Get an IBM ID
 
-The first step to getting your free trial of Watson Supply Chain Insights (WSCI for 
+The first step to getting your free trial of Supply Chain Insights (SCI for 
 short) is to get an IBM ID. First go to [ibm.com](https://www.ibm.com) and in the 
 top-right corner, click on the icon of a person. From there, click on **My IBM**. 
 From there, click on **Create an IBM ID** and fill out the form. Note that the 
 email you use here will need to be valid, since you will be emailed your trail 
-account for WSCI to the email you use to create your IBM ID. Now that you have 
-created your IBM ID, let's request your WSCI trial.
+account for SCI to the email you use to create your IBM ID. Now that you have 
+created your IBM ID, let's request your SCI trial.
 
-# 2. Get a Watson Supply Chain Insights trial account
-To get a Watson Supply Chain insights trail account, we must first register 
+# 2. Get a  Supply Chain Insights trial account
+To get a  Supply Chain Insights trail account, we must first register 
 for a course that gives us access to this account. Let's go to 
 [IBM Training and Skills site](https://www.onlinedigitallearning.com/course/index.php). You will likely be asked to login with your IBM ID. Once there, 
 search for **DL25400G**. You will see a couple results, click on 
@@ -81,17 +82,17 @@ From there, fill in the form with your IBM ID email, and then click on
 **Create Request**. The request must be processed by IBM, and can take **up to 
 one business day** to complete. I.e. if you request it on Friday, you may only get 
 access to your account on Monday. Once you get your email granting your access 
-to your WSCI trial, we are ready to get started! 
+to your SCI trial, we are ready to get started! 
 
 # 3. Upload existing orders and shipments from spreadsheet
-Our first exercise upon getting our WSCI account is uploading data from a 
+Our first exercise upon getting our SCI account is uploading data from a 
 spreadsheet. Go ahead do a git clone to download all of the files from 
 the repo, which includes the Excel spreadsheets.
 
 ```
-testDir$ git clone https://github.com/horeaporutiu/watson-supply-chain-insights
+testDir$ git clone https://github.com/horeaporutiu/supply-chain-insights
 
-testDir$ cd watson-supply-chain-insights/ 
+testDir$ cd -supply-chain-insights/ 
 ```
 
 You'll see in this repo, that we have the **product-spreadsheet.xlsx** 
@@ -103,7 +104,7 @@ them. Since my initials are HP, my spreadsheet will show
 Now, log into [IBM Supply Chain Insights](https://www.ibm.com/customer-engagement/supply-chain/launch/) with your IBM ID and 
 password you created in step 1.
 
-From the left-hand panel of the WSCI dashboard, click on **Data**, which
+From the left-hand panel of the SCI dashboard, click on **Data**, which
 is right above the **Settings**. From there, click on **Upload**. From 
 there, navigate to **product-inventory.xlsx** from within your cloned
 repo. You should see something like `This upload is similar to files that were previously uploaded. Select one of these mappings?
@@ -125,7 +126,7 @@ You now know how to upload data through Excel spreadsheets!
 
 # 4. Get API Credentials
 
-APIs for WSCI enable you to load, update, and delete data. The first 
+APIs for SCI enable you to load, update, and delete data. The first 
 thing we need to do before we can use the API is to get our credentials.
 
 We need three credentials:
@@ -134,12 +135,12 @@ We need three credentials:
 2. X-IBM-Client-Id
 3. X-IBM-Client-Secret
 
-To retrieve the first two, from the WSCI home dashboard, click on
+To retrieve the first two, from the SCI home dashboard, click on
 **Settings -> Build info**. From there you should see 
 your **X-IBM-User-Secret** and **X-IBM-Client-Id**
 
 To retrieve the **X-IBM-Client-Secret**, click on **RESTful APIs**
-under API access. This will take you to the WSCI API explorer page.
+under API access. This will take you to the SCI API explorer page.
 Click on **My APIs** in the top-right corner. To the right of 
 **Supply Chain Insights** you'll see a key icon, go ahead and click
 on that. Once you click the icon, you'll see two sets of credentials
@@ -148,10 +149,10 @@ key icon you can see it says **X-IBM-Client-Secret** - then click
 **SHOW** and save your **X-IBM-Client-Secret**.
 
 🚨
-**Note: You will have to update your [config.js](https://github.com/horeaporutiu/watson-supply-chain-insights/blob/master/config.js) file client secret, user secret, and user id fields with the credentials you just got above.**
+**Note: You will have to update your [config.js](https://github.com/horeaporutiu/supply-chain-insights/blob/master/config.js) file client secret, user secret, and user id fields with the credentials you just got above.**
 🚨
 
-At first the [config.js](https://github.com/horeaporutiu/watson-supply-chain-insights/blob/master/config.js)
+At first the [config.js](https://github.com/horeaporutiu/supply-chain-insights/blob/master/config.js)
 file will look something like this:
 
 ```javascript
@@ -174,15 +175,15 @@ module.exports = {
 
 Note these are fake credentials ^^.
 
-Nice, you are now ready to use the WSCI APIs!
+Nice, you are now ready to use the SCI APIs!
 
-# 5. Use APIs to automate uploading of data to Watson Supply Chain Insights
-Let's first go to the WSCI [API documentation page](https://developer.ibm.com/api/view/scinsights-prod:supply-chain-insights:title-Supply_Chain_Insights#doc). From there, let's try out first API request to find customers. 
+# 5. Use APIs to automate uploading of data to  Supply Chain Insights
+Let's first go to the SCI [API documentation page](https://developer.ibm.com/api/view/scinsights-prod:supply-chain-insights:title-Supply_Chain_Insights#doc). From there, let's try out first API request to find customers. 
 In your cloned repo, you should see a script that is called
 `getCustomers.js`. This script, along with a lot of the other scripts
 we will run, use the base api 
 `https://api.ibm.com/scinsights/run/api/`, but this one in specific 
-looks to get all of the customers we have stored in WSCI. This is 
+looks to get all of the customers we have stored in SCI. This is 
 why the URL we will make a API request to is the following:
 
 `url: 'https://api.ibm.com/scinsights/run/api/customers'`
@@ -217,7 +218,7 @@ var options = { method: 'GET',
 ```
 
 The last part of the script uses the library to make an HTTP API call
-to the WSCI API and then once we get the data back from our API call
+to the SCI API and then once we get the data back from our API call
 the callback function will fire, as shown below:
 
 ```javascript
@@ -237,14 +238,14 @@ to the `output/getAllCustomer.json` file:
 ```
 
 Now that we understand how we are making the request, let's 
-go ahead and run the script [getCustomer.js](https://github.ibm.com/ibm-developer-emerging-tech/watson-supply-chain-insights/blob/master/getCustomers.js)
+go ahead and run the script [getCustomer.js](https://github.ibm.com/ibm-developer-emerging-tech/-supply-chain-insights/blob/master/getCustomers.js)
 
 ```javascript
-watson-supply-chain-insights$ node getCustomers.js
+-supply-chain-insights$ node getCustomers.js
 The file was saved!
 ```
 
-If we go to the [output/getAllCustomer.json file](https://github.ibm.com/ibm-developer-emerging-tech/watson-supply-chain-insights/blob/master/output/getAllCustomers.json), we will see it's all on one line. Let's
+If we go to the [output/getAllCustomer.json file](https://github.ibm.com/ibm-developer-emerging-tech/-supply-chain-insights/blob/master/output/getAllCustomers.json), we will see it's all on one line. Let's
 format it by selecting the line, right-clicking and selecting 
 **format document**. If all went well, you should see a document
 with over 300 lines, something that looks a bit like the following:
@@ -327,11 +328,11 @@ with over 300 lines, something that looks a bit like the following:
     },
 ```
 
-Note that this is all dummy data, but WSCI comes with some dummy
+Note that this is all dummy data, but SCI comes with some dummy
 data out of the box to show you what it can do. Let's now 
-go ahead and put some of our own data into WSCI.
+go ahead and put some of our own data into SCI.
 
-Go ahead and check out the [sampleProduct.json file](https://github.ibm.com/ibm-developer-emerging-tech/watson-supply-chain-insights/blob/master/sampleProduct.json)
+Go ahead and check out the [sampleProduct.json file](https://github.ibm.com/ibm-developer-emerging-tech/-supply-chain-insights/blob/master/sampleProduct.json)
 
 It should look something like this: 
 
@@ -421,7 +422,7 @@ Once you modify and save the file, it should look something like this:
 ```
 
 Excuse the GOAT reference, but hopefully I will be GOAT at some point :) 😂
-Anyways, save the file, and then run the script [loadProduct.js](https://github.com/horeaporutiu/watson-supply-chain-insights/blob/master/loadProduct.js).
+Anyways, save the file, and then run the script [loadProduct.js](https://github.com/horeaporutiu/supply-chain-insights/blob/master/loadProduct.js).
 
 
 
@@ -433,8 +434,8 @@ This application can be expanded in a couple of ways:
 
 
 ## Links
-* [Watson Supply Chain Insights Details](https://www.ibm.com/us-en/marketplace/supply-chain-insights/details)
-* [Watson Supply Chain Insights API Explorer](https://developer.ibm.com/api/view/scinsights-prod:supply-chain-insights:title-Supply_Chain_Insights)
+* [ Supply Chain Insights Details](https://www.ibm.com/us-en/marketplace/supply-chain-insights/details)
+* [ Supply Chain Insights API Explorer](https://developer.ibm.com/api/view/scinsights-prod:supply-chain-insights:title-Supply_Chain_Insights)
 
 ## License
 This code pattern is licensed under the Apache Software License, Version 2. Separate third-party code objects invoked within this code pattern are licensed by their respective providers pursuant to their own separate licenses. Contributions are subject to the [Developer Certificate of Origin, Version 1.1 (DCO)](https://developercertificate.org/) and the [Apache Software License, Version 2](https://www.apache.org/licenses/LICENSE-2.0.txt).
