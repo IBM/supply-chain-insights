@@ -8,7 +8,11 @@ Insights trial account. If you do not, please follow the steps outlined
 
 # Accessing the Supply Chain Insights API Keys
 
-
+<br>
+<p align="center">
+  <img src="images/gifs/getKeys.gif">
+</p>
+<br>
 
 Given that you are logged in with your IBMid and have launched your 
 Supply Chain Insights platform, you are now ready to start uploading some data. 
