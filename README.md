@@ -76,7 +76,7 @@ disruptions predicted by advisories.
 </p>
 <br>
 
-## 1. Get an IBM ID
+# 1. Get an IBM ID
 
 The first step to getting your free trial of Supply Chain Insights (SCI for 
 short) is to get an IBM ID. First go to [ibm.com](https://www.ibm.com) and in the 
@@ -85,6 +85,12 @@ From there, click on **Create an IBM ID** and fill out the form. Note that the
 email you use here will need to be valid, since you will be emailed your trail 
 account for SCI to the email you use to create your IBM ID. Now that you have 
 created your IBM ID, let's request your SCI trial.
+
+<br>
+<p align="center">
+  <img src="images/gifs/requestAcct.gif">
+</p>
+<br>
 
 # 2. Get a Supply Chain Insights trial account
 To get a  Supply Chain Insights trail account, we must first register 
