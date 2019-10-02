@@ -3,6 +3,16 @@
 >Use Supply Chain Insights to predict, assess, and mitigate disruptions and 
 ultimately optimize supply chain performance
 
+When everything is going all and well, details such as which route your carrier took to deliver your 
+package to your customer seem completely immaterial. But what happens when a massive storm hits, 
+and you realize that all of your carriers are stuck in the storm, and none of your packages will
+be delivered on time? You've just broken your promise to your customers, and more likely than not, you'll
+have to deal with angry customers demanding refunds, all because you didn't have the visibility into 
+your end-to-end supply chain. This is where Supply Chain Insights comes in.
+
+IBM's Supply Chain Insights provides your organization with end-to-end visibility throughout all stages of the supply chain lifecycle - starting from planning and sourcing, all the way to delivery and service, and everything in-between. Not only that but Supply Chain Insights is a collaboration platform; it enables businesses to set up resolution rooms to discuss and take action on problems that inevitably arise during the supply chain process. Now, Supply Chain Insights, like any other artificial intelligence application, is only as good as the data that you give it. To make things simple, Supply Chain Insights allows for two ways to upload data into the platform - one via Excel sheet upload, and the other via REST APIs. This 
+pattern will show you how to 
+
 Audience level : Intermediate Developers
 
 🚨
@@ -30,20 +40,19 @@ orders and shipments.
 current location and estimated time of delivery for shipments. 
 4. Supply Chain Insights offers valuable advisories depending on the UPS 
 information about the current location and estimated delivery. 
-5. The supply chain team goes into resolution rooms to react to 
-unforseen events emitted by Supply Chain Insights.
-
-
+5. The supply chain team goes into resolution rooms to plan how best to mitigate 
+disruptions predicted by advisories. 
 
 # Included components
 * [Supply Chain Insights](https://www.ibm.com/us-en/marketplace/supply-chain-insights) Capitalize on AI to break free from supply chain visibility challenges and act with confidence.
 
 ## Featured technologies
-<!-- + [Hyperledger Fabric v1.4](https://hyperledger-fabric.readthedocs.io) is a platform for distributed ledger solutions, underpinned by a modular architecture that delivers high degrees of confidentiality, resiliency, flexibility, and scalability. -->
+- [Node.js - latest LTS](https://nodejs.org/en/) 
 
-<!-- # Watch the Video 
 
-[![](docs/doc-images/video.png)](https://www.youtube.com/watch?v=KLWLCjKf5Xw) -->
+# Watch the Video - Coming soon
+
+<!-- [![](docs/doc-images/video.png)](https://www.youtube.com/watch?v=KLWLCjKf5Xw) -->
 
 
 ### Prerequisites
@@ -61,6 +70,12 @@ unforseen events emitted by Supply Chain Insights.
 5. [Use APIs to automate uploading of data to Supply Chain Insights](#5-Use-APIs-to-automate-uploading-of-data-to-Supply-Chain-Insights)
 
 
+<br>
+<p align="center">
+  <img src="images/gifs/createIBMid.gif">
+</p>
+<br>
+
 ## 1. Get an IBM ID
 
 The first step to getting your free trial of Supply Chain Insights (SCI for 
@@ -71,7 +86,7 @@ email you use here will need to be valid, since you will be emailed your trail
 account for SCI to the email you use to create your IBM ID. Now that you have 
 created your IBM ID, let's request your SCI trial.
 
-# 2. Get a  Supply Chain Insights trial account
+# 2. Get a Supply Chain Insights trial account
 To get a  Supply Chain Insights trail account, we must first register 
 for a course that gives us access to this account. Let's go to 
 [IBM Training and Skills site](https://www.onlinedigitallearning.com/course/index.php). You will likely be asked to login with your IBM ID. Once there, 
@@ -424,9 +439,6 @@ Once you modify and save the file, it should look something like this:
 Excuse the GOAT reference, but hopefully I will be GOAT at some point :) 😂
 Anyways, save the file, and then run the script [loadProduct.js](https://github.com/horeaporutiu/supply-chain-insights/blob/master/loadProduct.js).
 
-
-
-
 <!-- ## Extending the code pattern
 This application can be expanded in a couple of ways:
 * Create a wallet for every member and use the member's wallet to interact with the application.
@@ -434,7 +446,7 @@ This application can be expanded in a couple of ways:
 
 
 ## Links
-* [ Supply Chain Insights Details](https://www.ibm.com/us-en/marketplace/supply-chain-insights/details)
+* [Supply Chain Insights Details](https://www.ibm.com/us-en/marketplace/supply-chain-insights/details)
 * [ Supply Chain Insights API Explorer](https://developer.ibm.com/api/view/scinsights-prod:supply-chain-insights:title-Supply_Chain_Insights)
 
 ## License
