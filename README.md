@@ -212,6 +212,13 @@ key icon you can see it says **X-IBM-Client-Secret** - then click
 At first the [config.js](https://github.com/horeaporutiu/supply-chain-insights/blob/master/config.js)
 file will look something like this:
 
+<br>
+<p align="center">
+  <img src="images/gifs/config.gif">
+</p>
+<br>
+
+
 ```javascript
 module.exports = {
   "x-ibm-client-secret": 'your-client-secret-goes-here',
