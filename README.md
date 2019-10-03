@@ -247,7 +247,8 @@ Nice, you are now ready to use the SCI APIs!
   <img src="images/gifs/getCustomers.gif">
 </p>
 <br>
-Let's first go to the SCI [API documentation page](https://developer.ibm.com/api/view/scinsights-prod:supply-chain-insights:title-Supply_Chain_Insights#doc). From there, let's try out first API request to find customers. 
+
+Let's first go to the SCI [API documentation page](https://developer.ibm.com/api/view/scinsights-prod:supply-chain-insights:title-Supply_Chain_Insights#doc) From there, let's try out first API request to find customers. 
 In your cloned repo, you should see a script that is called
 `getCustomers.js`. This script, along with a lot of the other scripts
 we will run, use the base api 
@@ -400,6 +401,8 @@ with over 300 lines, something that looks a bit like the following:
 Note that this is all dummy data, but SCI comes with some dummy
 data out of the box to show you what it can do. Let's now 
 go ahead and put some of our own data into SCI.
+
+# 6. Use Supply Chain Insights APIs add product and sales order data 
 
 Go ahead and check out the [sampleProduct.json file](https://github.ibm.com/ibm-developer-emerging-tech/-supply-chain-insights/blob/master/sampleProduct.json)
 
