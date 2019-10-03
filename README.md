@@ -11,7 +11,8 @@ have to deal with angry customers demanding refunds, all because you didn't have
 your end-to-end supply chain. This is where Supply Chain Insights comes in.
 
 IBM's Supply Chain Insights provides your organization with end-to-end visibility throughout all stages of the supply chain lifecycle - starting from planning and sourcing, all the way to delivery and service, and everything in-between. Not only that but Supply Chain Insights is a collaboration platform; it enables businesses to set up resolution rooms to discuss and take action on problems that inevitably arise during the supply chain process. Now, Supply Chain Insights, like any other artificial intelligence application, is only as good as the data that you give it. To make things simple, Supply Chain Insights allows for two ways to upload data into the platform - one via Excel sheet upload, and the other via REST APIs. This 
-pattern will show you how to 
+pattern will show you how to you to get your account, upload data, and integrate with external data 
+sources such as UPS, and ultimately make better supply chain decisions. 
 
 Audience level : Intermediate Developers
 
@@ -112,6 +113,13 @@ to your SCI trial, we are ready to get started!
 
 
 # 3. Upload existing orders and shipments from spreadsheet
+
+<br>
+<p align="center">
+  <img src="images/gifs/updateSpreadsheet.gif">
+</p>
+<br>
+
 Our first exercise upon getting our SCI account is uploading data from a 
 spreadsheet. Go ahead do a git clone to download all of the files from 
 the repo, which includes the Excel spreadsheets.
