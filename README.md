@@ -69,6 +69,7 @@ disruptions predicted by advisories.
 3. [Upload existing orders and shipments from spreadsheet](#3-Upload-existing-orders-and-shipments-from-spreadsheet)
 4. [Get API Credentials](#4-Get-API-credentials)
 5. [Use APIs to automate uploading of data to Supply Chain Insights](#5-Use-APIs-to-automate-uploading-of-data-to-Supply-Chain-Insights)
+6. [6 Use Supply Chain Insights APIs to add product data](#6-Use-Supply-Chain-Insights-APIs-to-add-product-data) 
 
 # 1. Get an IBM ID
 
