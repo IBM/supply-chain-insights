@@ -43,7 +43,7 @@ sources such as UPS, and ultimately make better supply chain decisions.
 
 <br>
 <p align="center">
-  <img src="docs/app-architecture.png">
+  <img src="images/archDiagram.png">
 </p>
 <br>
 
@@ -62,11 +62,14 @@ disruptions predicted by advisories.
 
 > Find the detailed steps for this pattern in the [readme file](https://github.ibm.com/ibm-developer-eti-blkch-iot-isc/supply-chain-insights). The steps will show you how to:
 
-1. [Get an IBM ID](#1-Get-an-IBM-ID)
-2. [Get a Supply Chain Insights trial account](#2-Get-a-Supply-Chain-Insights-trial-account)
-3. [Upload existing orders and shipments from spreadsheet](#3-Upload-existing-orders-and-shipments-from-spreadsheet)
-4. [Get API Credentials](#4-Get-API-credentials)
-5. [Use APIs to automate uploading of data to Supply Chain Insights](#5-Use-APIs-to-automate-uploading-of-data-to-Supply-Chain-Insights)
+
+1. [Get an IBM ID](https://github.ibm.com/ibm-developer-eti-blkch-iot-isc/supply-chain-insights#step-1-Get-an-IBM-ID)
+2. [Get a Supply Chain Insights trial account](https://github.ibm.com/ibm-developer-eti-blkch-iot-isc/supply-chain-insights#step-2-get-a-supply-chain-insights-trial-account)
+3. [Upload existing orders and shipments from spreadsheet](https://github.ibm.com/ibm-developer-eti-blkch-iot-isc/supply-chain-insights#step-3-upload-existing-orders-and-shipments-from-spreadsheet)
+4. [Get API Credentials](https://github.ibm.com/ibm-developer-eti-blkch-iot-isc/supply-chain-insights#step-4-get-api-credentials)
+5. [Use Supply Chain Insights API to gain visibility into your customers](https://github.ibm.com/ibm-developer-eti-blkch-iot-isc/supply-chain-insights#step-5-use-supply-chain-insights-api-to-gain-visibility-into-your-customers)
+6. [Use Supply Chain Insights APIs to add product data](https://github.ibm.com/ibm-developer-eti-blkch-iot-isc/supply-chain-insights#step-6-use-supply-chain-insights-apis-to-add-product-data) 
+7. [Use UPS APIs to add location and delivery estimate data ](https://github.ibm.com/ibm-developer-eti-blkch-iot-isc/supply-chain-insights#step-7-use-ups-apis-to-add-location-and-delivery-estimate-data) 
 
 # Components and services
 
