@@ -1,0 +1,21 @@
+{
+  "name": "supply-chain-insights",
+  "version": "1.0.0",
+  "description": "code pattern to show how to use supply chain insights platform and upload data",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/horeaporutiu/watson-supply-chain-insights.git"
+  },
+  "author": "Horea Porutiu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/horeaporutiu/watson-supply-chain-insights/issues"
+  },
+  "homepage": "https://github.com/horeaporutiu/watson-supply-chain-insights#readme",
+  "dependencies": {
+    "fs": "0.0.1-security",
+    "path": "^0.12.7",
+    "request": "^2.88.0",
+    "util": "^0.12.1"
+  }
+}
