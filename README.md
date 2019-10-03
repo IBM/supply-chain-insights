@@ -28,11 +28,10 @@ When you have completed this code pattern, you will understand how to:
 time of supply chain events.
 
 # Architecture flow
-<!-- ***UPDATE***
 
 <p align="center">
-  <img src="docs/doc-images/archdiagram.png">
-</p> -->
+  <img src="docs/doc-images/archDiagram.png">
+</p>
 
 1. The developer uploads existing shipment information using Excel.
 2. The developer uses APIs to automate uploading of large batches of 
