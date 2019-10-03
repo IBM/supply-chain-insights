@@ -484,7 +484,22 @@ WSCI$ node loadProduct
     _productLine: 'Energy Bars'
  ```
 # Step 7. Use UPS APIs to add location and delivery estimate data 
-Almost done!
+Next, it's time to integrate with external systems to upload data into 
+Supply Chain Insights. For this step, we're going to use UPS APIs. First,
+you must get a [UPS account](https://www.ups.com/doapp/signup?loc=en_US). 
+
+<br>
+<p align="center">
+  <img src="images/gifs/upsApiKey.gif">
+</p>
+<br>
+
+Once you've signed into your UPS account, let's go to the [UPS Developer Kit page](https://www.ups.com/upsdeveloperkit?loc=en_US). For now,
+we will use the Tracking API to check in on our packages. But first, we must 
+[request an access (API) key](https://www.ups.com/upsdeveloperkit/requestaccesskey?loc=en_US).
+
+After you fill in the info, you can go ahead and click on **Request Access Key**.
+Within a few seconds you should have your access key. Nice!
 
 <!-- ## Extending the code pattern
 This application can be expanded in a couple of ways:
