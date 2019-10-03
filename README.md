@@ -72,7 +72,7 @@ disruptions predicted by advisories.
 6. [Use Supply Chain Insights APIs to add product data](#step-6-Use-Supply-Chain-Insights-APIs-to-add-product-data) 
 7. [Use UPS APIs to add location and delivery estimate data](#step-7-Use-UPS-APIs-to-add-location-and-delivery-estimate-data) 
  
-# 1. Get an IBM ID
+# Step 1. Get an IBM ID
 
 <br>
 <p align="center">
@@ -90,7 +90,7 @@ created your IBM ID, let's request your SCI trial.
 
 
 
-# 2. Get a Supply Chain Insights trial account
+# Step 2. Get a Supply Chain Insights trial account
 
 <br>
 <p align="center">
@@ -114,7 +114,7 @@ Once you get your email granting your access
 to your SCI trial, we are ready to get started!
 
 
-# 3. Upload existing orders and shipments from spreadsheet
+# Step 3. Upload existing orders and shipments from spreadsheet
 
 <br>
 <p align="center">
@@ -177,7 +177,7 @@ click on the right-arrow, you should see **8 records processed**. Nice job!
 
 You now know how to upload data through Excel spreadsheets! 
 
-# 4. Get API Credentials
+# Step 4. Get API Credentials
 
 <br>
 <p align="center">
@@ -243,7 +243,7 @@ Note these are fake credentials ^^.
 
 Nice, you are now ready to use the SCI APIs!
 
-# 5. Run your first Supply Chain Insights API to gain visibility into your customers
+# Step 5. Run your first Supply Chain Insights API to gain visibility into your customers
 <br>
 <p align="center">
   <img src="images/gifs/getCustomers.gif">
@@ -428,31 +428,7 @@ It should look something like this:
   "_productExpectedLeadTime": 840,
   "_productFamily": "Health Food",
   "_productID": "Enter your own product name",
-  "_productLine": "Energy Bars",
-  "_productMargin": 40,
-  "_productNumber": "Enter your own product name",
-  "_productReorderLevel": 36729000,
-  "_productSafetyStockLevel": 33390000,
-  "_productShelfLife": 1800,
-  "_productValue": 6,
-  "_productValueCurrency": "US$",
-  "_sourceLink": null,
-  "_totalDefectedProducts": 0,
-  "_totalProduction": 100000,
-  "agingThreshold": 2160,
-  "brand": "Zilla Bar",
-  "category": "Food",
-  "description": "Zilla Energy Bar 2oz. Special Edition",
-  "expectedLeadTime": 840,
-  "family": "Health Food",
-  "line": "Energy Bars",
-  "number": "Enter your own product name",
-  "reOrderLevel": 36729000,
-  "safetyStockLevel": 33390000,
-  "shelfLife": 1800,
-  "sourceLink": null,
-  "value": 6,
-  "valueCurrency": "US$"
+  "_productLine": "Energy Bars"
 }
 ```
 
@@ -472,32 +448,7 @@ Once you modify and save the file, it should look something like this:
   "_productDescription": "Zilla Energy Bar 2oz. Special Edition",
   "_productExpectedLeadTime": 840,
   "_productFamily": "Health Food",
-  "_productID": "HP-IT-2019",
-  "_productLine": "Energy Bars",
-  "_productMargin": 40,
-  "_productNumber": "Enter your own product name",
-  "_productReorderLevel": 36729000,
-  "_productSafetyStockLevel": 33390000,
-  "_productShelfLife": 1800,
-  "_productValue": 6,
-  "_productValueCurrency": "US$",
-  "_sourceLink": null,
-  "_totalDefectedProducts": 0,
-  "_totalProduction": 100000,
-  "agingThreshold": 2160,
-  "brand": "Zilla Bar",
-  "category": "Food",
-  "description": "Zilla Energy Bar 2oz. Special Edition",
-  "expectedLeadTime": 840,
-  "family": "Health Food",
-  "line": "Energy Bars",
-  "number": "Enter your own product name",
-  "reOrderLevel": 36729000,
-  "safetyStockLevel": 33390000,
-  "shelfLife": 1800,
-  "sourceLink": null,
-  "value": 6,
-  "valueCurrency": "US$"
+  "_productID": "HP-IT-2019"
 }
 ```
 
@@ -531,7 +482,7 @@ WSCI$ node loadProduct
     _productLine: 'Energy Bars'
  ```
 # 7. Use UPS APIs to add location and delivery estimate data 
-
+Almost done!
 
 <!-- ## Extending the code pattern
 This application can be expanded in a couple of ways:
