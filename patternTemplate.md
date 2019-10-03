@@ -60,7 +60,7 @@ disruptions predicted by advisories.
 
 # Instructions
 
-> Find the detailed steps for this pattern in the [readme file](https://github.ibm.com/ibm-developer-eti-blkch-iot-isc/supply-chain-insights). The steps will show you how to:
+> Find the detailed steps for this pattern in the [readme file](https://github.com/horeaporutiu/supply-chain-insights/blob/master/README.md). The steps will show you how to:
 
 
 1. [Get an IBM ID](https://github.com/horeaporutiu/supply-chain-insights#step-1-Get-an-IBM-ID)
