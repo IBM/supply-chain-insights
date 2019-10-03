@@ -404,7 +404,7 @@ Note that this is all dummy data, but SCI comes with some dummy
 data out of the box to show you what it can do. Let's now 
 go ahead and put some of our own data into SCI.
 
-# 6. Use Supply Chain Insights APIs to add product data 
+# Step 6. Use Supply Chain Insights APIs to add product data 
 
 <br>
 <p align="center">
@@ -481,7 +481,7 @@ WSCI$ node loadProduct
     _productID: 'HP-IT-2019',
     _productLine: 'Energy Bars'
  ```
-# 7. Use UPS APIs to add location and delivery estimate data 
+# Step 7. Use UPS APIs to add location and delivery estimate data 
 Almost done!
 
 <!-- ## Extending the code pattern
