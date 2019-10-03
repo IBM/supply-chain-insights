@@ -241,7 +241,12 @@ Note these are fake credentials ^^.
 
 Nice, you are now ready to use the SCI APIs!
 
-# 5. Use APIs to automate uploading of data to  Supply Chain Insights
+# 5. Run your first Supply Chain Insights API to gain visibility into your customers
+<br>
+<p align="center">
+  <img src="images/gifs/getCustomers.gif">
+</p>
+<br>
 Let's first go to the SCI [API documentation page](https://developer.ibm.com/api/view/scinsights-prod:supply-chain-insights:title-Supply_Chain_Insights#doc). From there, let's try out first API request to find customers. 
 In your cloned repo, you should see a script that is called
 `getCustomers.js`. This script, along with a lot of the other scripts
