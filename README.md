@@ -69,14 +69,13 @@ disruptions predicted by advisories.
 4. [Get API Credentials](#4-Get-API-credentials)
 5. [Use APIs to automate uploading of data to Supply Chain Insights](#5-Use-APIs-to-automate-uploading-of-data-to-Supply-Chain-Insights)
 
+# 1. Get an IBM ID
 
 <br>
 <p align="center">
   <img src="images/gifs/createIBMid.gif">
 </p>
 <br>
-
-# 1. Get an IBM ID
 
 The first step to getting your free trial of Supply Chain Insights (SCI for 
 short) is to get an IBM ID. First go to [ibm.com](https://www.ibm.com) and in the 
@@ -86,13 +85,16 @@ email you use here will need to be valid, since you will be emailed your trail
 account for SCI to the email you use to create your IBM ID. Now that you have 
 created your IBM ID, let's request your SCI trial.
 
+
+
+# 2. Get a Supply Chain Insights trial account
+
 <br>
 <p align="center">
   <img src="images/gifs/requestAcct.gif">
 </p>
 <br>
 
-# 2. Get a Supply Chain Insights trial account
 To get a  Supply Chain Insights trail account, we must first register 
 for a course that gives us access to this account. Let's go to 
 [IBM Training and Skills site](https://www.onlinedigitallearning.com/course/index.php). You will likely be asked to login with your IBM ID. Once there, 
@@ -102,8 +104,12 @@ course, you will see a few links, click on **Requesting your learning environmen
 From there, fill in the form with your IBM ID email, and then click on 
 **Create Request**. The request must be processed by IBM, and can take **up to 
 one business day** to complete. I.e. if you request it on Friday, you may only get 
-access to your account on Monday. Once you get your email granting your access 
-to your SCI trial, we are ready to get started! 
+access to your account on Monday. 
+
+Go ahead and check your email that is associated with your IBMid.
+Once you get your email granting your access 
+to your SCI trial, we are ready to get started!
+
 
 # 3. Upload existing orders and shipments from spreadsheet
 Our first exercise upon getting our SCI account is uploading data from a 
@@ -113,7 +119,7 @@ the repo, which includes the Excel spreadsheets.
 ```
 testDir$ git clone https://github.com/horeaporutiu/supply-chain-insights
 
-testDir$ cd -supply-chain-insights/ 
+testDir$ cd supply-chain-insights/ 
 ```
 
 You'll see in this repo, that we have the **product-spreadsheet.xlsx** 
