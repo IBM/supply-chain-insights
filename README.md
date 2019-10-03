@@ -64,13 +64,13 @@ disruptions predicted by advisories.
 
 # Steps
 
-1. [Get an IBM ID](#1-Get-an-IBM-ID)
-2. [Get a Supply Chain Insights trial account](#2-Get-a-Supply-Chain-Insights-trial-account)
-3. [Upload existing orders and shipments from spreadsheet](#3-Upload-existing-orders-and-shipments-from-spreadsheet)
-4. [Get API Credentials](#4-Get-API-credentials)
-5. [Use APIs to automate uploading of data to Supply Chain Insights](#5-Use-APIs-to-automate-uploading-of-data-to-Supply-Chain-Insights)
-6. [Use Supply Chain Insights APIs to add product data](#6-Use-Supply-Chain-Insights-APIs-to-add-product-data) 
-7. [Use UPS APIs to add location and delivery estimate data](#7-Use-UPS-APIs-to-add-location-and-delivery-estimate-data) 
+1. [Get an IBM ID](#step-1-Get-an-IBM-ID)
+2. [Get a Supply Chain Insights trial account](#step-2-Get-a-Supply-Chain-Insights-trial-account)
+3. [Upload existing orders and shipments from spreadsheet](#step-3-Upload-existing-orders-and-shipments-from-spreadsheet)
+4. [Get API Credentials](#step-4-Get-API-credentials)
+5. [Use APIs to automate uploading of data to Supply Chain Insights](#step-5-Use-APIs-to-automate-uploading-of-data-to-Supply-Chain-Insights)
+6. [Use Supply Chain Insights APIs to add product data](#step-6-Use-Supply-Chain-Insights-APIs-to-add-product-data) 
+7. [Use UPS APIs to add location and delivery estimate data](#step-7-Use-UPS-APIs-to-add-location-and-delivery-estimate-data) 
  
 # 1. Get an IBM ID
 
