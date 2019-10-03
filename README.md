@@ -404,6 +404,12 @@ go ahead and put some of our own data into SCI.
 
 # 6. Use Supply Chain Insights APIs add product and sales order data 
 
+<br>
+<p align="center">
+  <img src="images/gifs/postAndGet.gif">
+</p>
+<br>
+
 Go ahead and check out the [sampleProduct.json file](https://github.ibm.com/ibm-developer-emerging-tech/-supply-chain-insights/blob/master/sampleProduct.json)
 
 It should look something like this: 
@@ -456,7 +462,7 @@ Once you modify and save the file, it should look something like this:
 ```json
 {
   "_flagOperationalPerformance": 1,
-  "_id": "Horea-GOAT",
+  "_id": "Horea's IT services",
   "_numDefectedProducts": 1,
   "_productAgingThreshold": 2160,
   "_productBrand": "Zilla Bar",
@@ -464,7 +470,7 @@ Once you modify and save the file, it should look something like this:
   "_productDescription": "Zilla Energy Bar 2oz. Special Edition",
   "_productExpectedLeadTime": 840,
   "_productFamily": "Health Food",
-  "_productID": "Horea-is-GOAT",
+  "_productID": "HP-IT-2019",
   "_productLine": "Energy Bars",
   "_productMargin": 40,
   "_productNumber": "Enter your own product name",
@@ -493,8 +499,35 @@ Once you modify and save the file, it should look something like this:
 }
 ```
 
-Excuse the GOAT reference, but hopefully I will be GOAT at some point :) 😂
-Anyways, save the file, and then run the script [loadProduct.js](https://github.com/horeaporutiu/supply-chain-insights/blob/master/loadProduct.js).
+ Save the file, and then run the script [loadProduct.js](https://github.com/horeaporutiu/supply-chain-insights/blob/master/loadProduct.js). The script 
+ has a main function which calls two other functions.
+
+ 1. It calls a function which creates a product in Supply Chain Insights 
+ by using the `sampleProduct.json` file.
+ 2. Next, it calls a function to lookup the product that was just created 
+ by Id. The `_id` value from `sampleProduct.json` is used to query by ID.
+
+ If all went well, you should see output like the following:
+
+ ```json
+ WSCI$ node loadProduct
+addProductRequest successful
+after product request
+id: 
+Horea's IT services
+getProductById response: 
+{ _flagOperationalPerformance: 1,
+  _id: 'Horea\'s IT services',
+  _numDefectedProducts: 1,
+  _productAgingThreshold: 2160,
+  _productBrand: 'Zilla Bar',
+  _productCategory: 'Food',
+  _productDescription: 'input your own id',
+  _productExpectedLeadTime: 840,
+  _productFamily: 'Health Food',
+  _productID: 'HP-IT-2019',
+  _productLine: 'Energy Bars'
+ ```
 
 <!-- ## Extending the code pattern
 This application can be expanded in a couple of ways:
