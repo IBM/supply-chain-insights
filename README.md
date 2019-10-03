@@ -166,7 +166,9 @@ Then, under **Your data fields** click on **Select an option** and click
 on **Inventory Location**. On the bottom, you should see **11/12 mapped**.
 Click on **Next**.
 
-The next page will say **Your data is uploading**. Click on **View History**.
+The next page will say **Your data is uploading**. Click on **View History**. Next, 
+click on **Refresh data**. You should now see that your data has been uploaded 
+with a timestamp from the current date!
 
 There, at the top of the page you should see **product-inventory**. If you
 click on the right-arrow, you should see **8 records processed**. Nice job!
@@ -174,6 +176,12 @@ click on the right-arrow, you should see **8 records processed**. Nice job!
 You now know how to upload data through Excel spreadsheets! 
 
 # 4. Get API Credentials
+
+<br>
+<p align="center">
+  <img src="images/gifs/getKeys.gif">
+</p>
+<br>
 
 APIs for SCI enable you to load, update, and delete data. The first 
 thing we need to do before we can use the API is to get our credentials.
