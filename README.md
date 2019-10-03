@@ -68,9 +68,9 @@ disruptions predicted by advisories.
 2. [Get a Supply Chain Insights trial account](#step-2-Get-a-Supply-Chain-Insights-trial-account)
 3. [Upload existing orders and shipments from spreadsheet](#step-3-Upload-existing-orders-and-shipments-from-spreadsheet)
 4. [Get API Credentials](#step-4-Get-API-credentials)
-5. [Use APIs to automate uploading of data to Supply Chain Insights](#step-5-Use-APIs-to-automate-uploading-of-data-to-Supply-Chain-Insights)
+5. [Use Supply Chain Insights API to gain visibility into your customers](#step-5-Use-Supply-Chain-Insights-API-to-gain-visibility-into-your-customers)
 6. [Use Supply Chain Insights APIs to add product data](#step-6-Use-Supply-Chain-Insights-APIs-to-add-product-data) 
-7. [Use UPS APIs to add location and delivery estimate data](#step-7-Use-UPS-APIs-to-add-location-and-delivery-estimate-data) 
+7. [Use UPS APIs to add location and delivery estimate data ](#step-7-Use-UPS-APIs-to-add-location-and-delivery-estimate-data) 
  
 # Step 1. Get an IBM ID
 
@@ -404,7 +404,7 @@ Note that this is all dummy data, but SCI comes with some dummy
 data out of the box to show you what it can do. Let's now 
 go ahead and put some of our own data into SCI.
 
-# 6. Use Supply Chain Insights APIs add product and sales order data 
+# 6. Use Supply Chain Insights APIs to add product data 
 
 <br>
 <p align="center">
