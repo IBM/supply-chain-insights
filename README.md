@@ -243,7 +243,7 @@ Note these are fake credentials ^^.
 
 Nice, you are now ready to use the SCI APIs!
 
-# Step 5. Run your first Supply Chain Insights API to gain visibility into your customers
+# Step 5. Use Supply Chain Insights API to gain visibility into your customers
 <br>
 <p align="center">
   <img src="images/gifs/getCustomers.gif">
