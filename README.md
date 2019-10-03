@@ -69,8 +69,9 @@ disruptions predicted by advisories.
 3. [Upload existing orders and shipments from spreadsheet](#3-Upload-existing-orders-and-shipments-from-spreadsheet)
 4. [Get API Credentials](#4-Get-API-credentials)
 5. [Use APIs to automate uploading of data to Supply Chain Insights](#5-Use-APIs-to-automate-uploading-of-data-to-Supply-Chain-Insights)
-6. [6 Use Supply Chain Insights APIs to add product data](#6-Use-Supply-Chain-Insights-APIs-to-add-product-data) 
-
+6. [Use Supply Chain Insights APIs to add product data](#6-Use-Supply-Chain-Insights-APIs-to-add-product-data) 
+7. [Use UPS APIs to add location and delivery estimate data](#7-Use-UPS-APIs-to-add-location-and-delivery-estimate-data) 
+ 
 # 1. Get an IBM ID
 
 <br>
@@ -510,25 +511,27 @@ Once you modify and save the file, it should look something like this:
 
  If all went well, you should see output like the following:
 
- ```json
- WSCI$ node loadProduct
-addProductRequest successful
-after product request
-id: 
-Horea's IT services
-getProductById response: 
-{ _flagOperationalPerformance: 1,
-  _id: 'Horea\'s IT services',
-  _numDefectedProducts: 1,
-  _productAgingThreshold: 2160,
-  _productBrand: 'Zilla Bar',
-  _productCategory: 'Food',
-  _productDescription: 'input your own id',
-  _productExpectedLeadTime: 840,
-  _productFamily: 'Health Food',
-  _productID: 'HP-IT-2019',
-  _productLine: 'Energy Bars'
+ ```bash
+WSCI$ node loadProduct
+  addProductRequest successful
+  after product request
+  id: 
+  Horea's IT services
+  getProductById response: 
+  { _flagOperationalPerformance: 1,
+    _id: 'Horea\'s IT services',
+    _numDefectedProducts: 1,
+    _productAgingThreshold: 2160,
+    _productBrand: 'Zilla Bar',
+    _productCategory: 'Food',
+    _productDescription: 'input your own id',
+    _productExpectedLeadTime: 840,
+    _productFamily: 'Health Food',
+    _productID: 'HP-IT-2019',
+    _productLine: 'Energy Bars'
  ```
+# 7. Use UPS APIs to add location and delivery estimate data 
+
 
 <!-- ## Extending the code pattern
 This application can be expanded in a couple of ways:
