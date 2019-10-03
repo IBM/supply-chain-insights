@@ -139,13 +139,27 @@ them. Since my initials are HP, my spreadsheet will show
 Now, log into [IBM Supply Chain Insights](https://www.ibm.com/customer-engagement/supply-chain/launch/) with your IBM ID and 
 password you created in step 1.
 
+<br>
+<p align="center">
+  <img src="images/gifs/excel1.gif">
+</p>
+<br>
+
 From the left-hand panel of the SCI dashboard, click on **Data**, which
 is right above the **Settings**. From there, click on **Upload**. From 
 there, navigate to **product-inventory.xlsx** from within your cloned
 repo. You should see something like `This upload is similar to files that were previously uploaded. Select one of these mappings?
 You can edit the mapping or make a copy if necessary.` Go ahead 
 and click on **Select a type** under the main panel which shows 
-11/12 fields matched. Then select **Product Inventory**. You should 
+11/12 fields matched.
+
+<br>
+<p align="center">
+  <img src="images/gifs/excel2.gif">
+</p>
+<br>
+
+On the next screen you should see a lot of panels. Go ahead and select **Product Inventory**. You should 
 see a pop-up which says **Time to map your upload!** Click on `Continue`.
 
 Then, under **Your data fields** click on **Select an option** and click 
