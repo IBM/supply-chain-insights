@@ -1,9 +1,9 @@
 'use strict';
 
-var request = require("request-promise");
+const request = require("request-promise");
 const path = require('path');
 const fs = require('fs');
-var util = require('util');
+const util = require('util');
 
 //connect to the config file
 const configPath = path.join(process.cwd(), './config.json');

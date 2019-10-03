@@ -130,6 +130,8 @@ the repo, which includes the Excel spreadsheets.
 testDir$ git clone https://github.com/horeaporutiu/supply-chain-insights
 
 testDir$ cd supply-chain-insights/ 
+
+
 ```
 
 You'll see in this repo, that we have the **product-spreadsheet.xlsx** 
@@ -313,7 +315,8 @@ Now that we understand how we are making the request, let's
 go ahead and run the script [getCustomer.js](https://github.ibm.com/ibm-developer-emerging-tech/-supply-chain-insights/blob/master/getCustomers.js)
 
 ```javascript
--supply-chain-insights$ node getCustomers.js
+supply-chain-insights$ npm install
+supply-chain-insights$ node getCustomers.js
 The file was saved!
 ```
 
