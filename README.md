@@ -540,11 +540,28 @@ If you look at the ups.js file, you'll see that first we get UPSInfo on
 a dummy shipment, and then we parse that shipment, get the date delivered
 and the pickup date, and create a new sales shipment with those details 
 in our platform.
-<!-- ## Extending the code pattern
-This application can be expanded in a couple of ways:
-* Create a wallet for every member and use the member's wallet to interact with the application.
-* Add a UI application in place of the `invoke.js` node application to execute the transactions. -->
 
+Go ahead and ask Watson the same question:
+
+`show me sales shipment "1Z12345E0205271688"`
+
+And this time Watson should show you all of the shipment details, 
+like the date delivered and the date created which we parsed 
+from the UPS object.
+
+Good job! You've just integrated with external APIs to add 
+data to the platform. Integrating your whole supply chain system
+into the SCI platform enables you to integrate with news and have a 
+full end-to-end picture of any disruptions (advisories) that may 
+impact your supply chain. You now have all the information you need to 
+make the optimal decision to ensure all of your back-end processes are 
+running as efficiently as possible.
+
+## Extending the code pattern
+This application can be expanded in a couple of ways:
+* Automatically check for any shipment detail changes by invoking the 
+UPS API every hour and update the SCI platform accordingly.
+* Create custom skills for Watson to more easily query your data.
 
 ## Links
 * [Supply Chain Insights Details](https://www.ibm.com/us-en/marketplace/supply-chain-insights/details)
