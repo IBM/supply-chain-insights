@@ -501,6 +501,45 @@ we will use the Tracking API to check in on our packages. But first, we must
 After you fill in the info, you can go ahead and click on **Request Access Key**.
 Within a few seconds you should have your access key. Nice!
 
+Now, let's do something with that API key. First, let's update `config.json` with
+your API key. It should look something like this when all is said and done: 
+
+```json
+{
+  "clientSecret": "your-client-secret-goes-here",
+  "userSecret": "your-user-secret-goes-here",
+  "clientId": "your-client-id-goes-here",
+  "upsAccessKey": "DD6C9D67asdfbadsg5"
+}
+```
+
+<br>
+<p align="center">
+  <img src="images/gifs/addUPSData.gif">
+</p>
+<br>
+
+In your SCI account dashboard, click on the Watson icon in the top right corner of 
+your screen. Type in the following command, to see if we have this sales shipment in
+our platform:
+
+`show me sales shipment "1Z12345E0205271688"`
+
+Watson should say `I did not find any sales shipment related to "1Z12345E0205271688" from Demo Carrier.`
+
+Next, let's run the [ups.js script](https://github.com/horeaporutiu/supply-chain-insights/blob/master/ups.js) by using the following 
+command in terminal:
+
+```bash
+WSCI$ node ups.js 
+```
+
+This should add the sales shipment `1Z12345E0205271688` to our platform. 
+
+If you look at the ups.js file, you'll see that first we get UPSInfo on 
+a dummy shipment, and then we parse that shipment, get the date delivered
+and the pickup date, and create a new sales shipment with those details 
+in our platform.
 <!-- ## Extending the code pattern
 This application can be expanded in a couple of ways:
 * Create a wallet for every member and use the member's wallet to interact with the application.
