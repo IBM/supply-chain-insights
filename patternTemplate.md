@@ -20,7 +20,7 @@ Use UPS APIs to update delivery details and gain visibility into your Supply Cha
 
 ### Github repo
 
-> https://github.ibm.com/ibm-developer-eti-blkch-iot-isc/supply-chain-insights
+> https://github.com/horeaporutiu/supply-chain-insights
 
 ### Other URLs (Video)
 
@@ -32,7 +32,7 @@ Use UPS APIs to update delivery details and gain visibility into your Supply Cha
 
 # Technologies
 
-[Node.js](https://nodejs.org/en/):An open source, cross-platform JavaScript run-time environment that executes server-side JavaScript code.
+[Node.js](https://nodejs.org/en/): An open source, cross-platform JavaScript run-time environment that executes server-side JavaScript code.
 
 # Description
 IBM's Supply Chain Insights provides your organization with end-to-end visibility throughout all stages of the supply chain lifecycle - starting from planning and sourcing, all the way to delivery and service, and everything in-between. Not only that but Supply Chain Insights is a collaboration platform; it enables businesses to set up resolution rooms to discuss and take action on problems that inevitably arise during the supply chain process. Now, Supply Chain Insights, like any other artificial intelligence application, is only as good as the data that you give it. To make things simple, Supply Chain Insights allows for two ways to upload data into the platform - one via Excel sheet upload, and the other via REST APIs. This 
