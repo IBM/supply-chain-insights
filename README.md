@@ -58,7 +58,7 @@ disruptions predicted by advisories.
 ### Prerequisites
 - [IBM ID](https://www.ibm.com) 
 - [Supply Chain Insights account](https://www.onlinedigitallearning.com/mod/page/view.php?id=59722&forceview=1)
-- [Node.js - v8.9.0](https://nodejs.org/en/) 
+- [Node.js - Latest](https://nodejs.org/en/) 
 
 
 # Steps
