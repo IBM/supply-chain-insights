@@ -36,8 +36,8 @@ async function getUPSInfo(UPSReferenceNumber) {
     body: {
       "Security": {
         "UsernameToken": {
-          "Username": "HoreaPorutiu",
-          "Password": "Azfxzgh39"
+          "Username": "<enter your UPS username here>",
+          "Password": "<enter your UPS password here>"
         },
         "UPSServiceAccessToken": {
           "AccessLicenseNumber": config.upsAccessKey
