@@ -50,9 +50,15 @@ disruptions predicted by advisories.
 - [Node.js - latest LTS](https://nodejs.org/en/) 
 
 
-# Watch the Video - Coming soon
+# Watch the Video Part 1 - Platform overview (no code)
+[![](images/video1.png)](https://www.youtube.com/watch?v=FWDX8DA4-Wo)
 
-<!-- [![](docs/doc-images/video.png)](https://www.youtube.com/watch?v=KLWLCjKf5Xw) -->
+# Watch the Video Part 2 - Getting your account, upload data using Excel
+[![](images/video2.png)](https://www.youtube.com/watch?v=rYoPCnxkIFw)
+
+# Watch the Video - Part 3 - Integrating w/ UPS APIs
+
+[![](images/video3.png)](https://www.youtube.com/watch?v=k_i-UcLWwnA)
 
 
 ### Prerequisites
@@ -527,7 +533,10 @@ our platform:
 
 Watson should say `I did not find any sales shipment related to "1Z12345E0205271688" from Demo Carrier.`
 
-Next, let's run the [ups.js script](https://github.com/horeaporutiu/supply-chain-insights/blob/master/ups.js) by using the following 
+Before we run the `ups.js` script, go ahead and add in your UPS username 
+and password in the following lines of the [ups.js script]().
+
+Next, let's run the [ups.js script](https://github.com/IBM/supply-chain-insights/blob/master/ups.js#L39) by using the following 
 command in terminal:
 
 ```bash

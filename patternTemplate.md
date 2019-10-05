@@ -22,9 +22,15 @@ Use UPS APIs to update delivery details and gain visibility into your Supply Cha
 
 > https://github.com/horeaporutiu/supply-chain-insights
 
-### Other URLs (Video)
+# Watch the Video Part 1 - Platform overview (no code)
+[![](images/video1.png)](https://www.youtube.com/watch?v=FWDX8DA4-Wo)
 
-* Demo URL (Intro) - TBD
+# Watch the Video Part 2 - Getting your account, upload data using Excel
+[![](images/video2.png)](https://www.youtube.com/watch?v=rYoPCnxkIFw)
+
+# Watch the Video - Part 3 - Integrating w/ UPS APIs
+
+[![](images/video3.png)](https://www.youtube.com/watch?v=k_i-UcLWwnA)
 
 # Summary
 
