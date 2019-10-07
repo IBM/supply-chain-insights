@@ -53,10 +53,10 @@ disruptions predicted by advisories.
 # Watch the Video Part 1 - Platform overview (no code)
 [![](images/video1.png)](https://www.youtube.com/watch?v=FWDX8DA4-Wo)
 
-# Watch the Video Part 2 - Getting your account, upload data using Excel
+# Watch the Video Part 2 - Getting your account, upload data using Excel (no code)
 [![](images/video2.png)](https://www.youtube.com/watch?v=rYoPCnxkIFw)
 
-# Watch the Video - Part 3 - Integrating w/ UPS APIs
+# Watch the Video - Part 3 - Integrating w/ UPS APIs (code tutorial)
 
 [![](images/video3.png)](https://www.youtube.com/watch?v=k_i-UcLWwnA)
 
