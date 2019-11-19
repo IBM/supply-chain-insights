@@ -30,7 +30,7 @@ time of supply chain events.
 # Architecture flow
 
 <p align="center">
-<!--   <img src="images/archDiagram.png"> -->
+  <img src="images/archDiagram.png">
 </p>
 
 1. The developer uploads existing shipment information using Excel.
